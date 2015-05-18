@@ -1,5 +1,3 @@
-var util = require('./util');
-
 /**
  * Basic Block
  * @constructor
@@ -82,5 +80,4 @@ BaseBlock.prototype.release = function () {
     this.lay = null;
 };
 
-module.exports = BaseBlock;
 

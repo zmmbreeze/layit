@@ -1,6 +1,3 @@
-var BaseBlock = require('./BaseBlock');
-var util = require('./util');
-
 /**
  * View Block
  * @constructor
@@ -56,5 +53,4 @@ ViewBlock.prototype.release = function () {
     ViewBlock.superClass.release.apply(this, arguments);
 };
 
-module.exports = ViewBlock;
 

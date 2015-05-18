@@ -1,5 +1,3 @@
-var BaseBlock = require('./BaseBlock');
-var util = require('./util');
 var ruleReg = /([^:]+):([^;$]+);?/g;
 var tokenReg = /([a-zA-Z][a-zA-Z0-9\-]*)\./g;
 
@@ -48,7 +46,7 @@ var LayBlock = function (element, lay) {
  *
  * @param {string} layStr
  */
-Block.prototype._parseRect = function (layStr) {
+LayBlock.prototype._parseRect = function (layStr) {
     layStr = layStr.trim();
     if (!layStr) {
         return;
@@ -91,7 +89,7 @@ Block.prototype._parseRect = function (layStr) {
     this.rectInfo = rectInfo;
 };
 
-Block.prototype.calc = function () {
+LayBlock.prototype.calc = function () {
     var rect = this.rect;
     var calcStr = '';
     var value;
@@ -125,5 +123,4 @@ LayBlock.prototype.getRequiredCalc = function (value) {
     return calc;
 };
 
-module.exports = LayBlock;
 

@@ -7,7 +7,7 @@ module.exports = {
         server: {
             // We're serving the src folder as well
             // for less sourcemap linking
-            baseDir: [dest, src]
+            baseDir: ['.']
         },
         files: [
             dest + '/**',
@@ -15,10 +15,8 @@ module.exports = {
             '!' + dest + '/**.map'
         ]
     },
-    browserify: {
-        src: src + '/js/',
-        dest: dest + '/js',
-        // Enable source maps
-        debug: true
+    concat: {
+        src: src + '/*',
+        dest: dest
     }
 };

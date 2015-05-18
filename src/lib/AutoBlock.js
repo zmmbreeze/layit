@@ -1,5 +1,3 @@
-var BaseBlock = require('./BaseBlock');
-var util = require('./util');
 
 /**
  * Auto size element's block.
@@ -20,6 +18,4 @@ AutoBlock.prototype.calcRect = function (element) {
 
 /** @override */
 AutoBlock.prototype.layit = function () {};
-
-module.exports = AutoBlock;
 

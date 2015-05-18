@@ -124,5 +124,4 @@ util.getRect = function (element) {
 };
 
 
-module.exports = util;
 

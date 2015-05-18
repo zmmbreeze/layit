@@ -1,7 +1,8 @@
-var util = require('./lib/util');
-var LayBlock = require('./lib/LayBlock');
-var AutoBlock = require('./lib/AutoBlock');
-var ViewBlock = require('./lib/ViewBlock');
+//= include ./lib/util.js
+//= include ./lib/BaseBlock.js
+//= include ./lib/AutoBlock.js
+//= include ./lib/ViewBlock.js
+//= include ./lib/LayBlock.js
 
 /**
  * Layit
